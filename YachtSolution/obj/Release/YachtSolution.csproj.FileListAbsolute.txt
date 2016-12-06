@@ -1,0 +1,12 @@
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Release\YachtSolution.exe.config
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Release\YachtSolution.exe
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Release\YachtSolution.pdb
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.GUILayer.CreateJob.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.GUILayer.InventoryManagement.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.GUILayer.ListOfJobs.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.GUILayer.MasterGUI.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.GUILayer.UpdateJob.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.Properties.Resources.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.csproj.GenerateResource.Cache
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.exe
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Release\YachtSolution.pdb

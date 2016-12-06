@@ -1,0 +1,34 @@
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\YachtSolution.exe
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\Technical Yacht Solutions.accdb
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\YachtSolution.exe.config
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\YachtSolution.exe.manifest
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\YachtSolution.application
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.CreateCrewMember.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.CreateGroup.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.CreateInventory.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.CreateJob.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.CreateLogItem.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.InventoryManagement.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.ListOfEmployees.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.ListOfJobs.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.LogBook.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.Login.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.MasterGUI.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.PrintTest.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.Settings.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.UpdateEmployee.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.UpdateInventory.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.UpdateJob.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.UpdateLogItem.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.GUILayer.UpdateSubGroup.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.Properties.Resources.resources
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.csproj.GenerateResource.Cache
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.exe.manifest
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.application
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.exe
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.pdb
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\bin\Debug\YachtSolution.pdb
+C:\Users\Reaper\Google Drev\UCN\Internship\YachtSolution\YachtSolution\obj\Debug\YachtSolution.csprojResolveAssemblyReference.cache
+C:\Users\Reaper\Desktop\YachtSolution\YachtSolution\bin\Debug\YachtSolution.exe.config
+C:\Users\Reaper\Desktop\YachtSolution\YachtSolution\obj\Debug\YachtSolution.exe
+C:\Users\Reaper\Desktop\YachtSolution\YachtSolution\obj\Debug\YachtSolution.pdb

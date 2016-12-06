@@ -1,0 +1,86 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="YachtSolution.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dmab0913_4sem_gruppe5ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad</Value>
+    </Setting>
+    <Setting Name="DataSourceConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=kraka.ucn.dk;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=kraka.ucn.dk;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad</Value>
+    </Setting>
+    <Setting Name="dmab0913_4sem_gruppe5ConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=Kraka.UCn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=Kraka.UCn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad</Value>
+    </Setting>
+    <Setting Name="dmab0913_4sem_gruppe5ConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe5;Persist Security Info=True;User ID=dmab0913_4sem_gruppe5;Password=Biksemad</Value>
+    </Setting>
+    <Setting Name="Technical_Yacht_SolutionsConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=j81655ta16.database.windows.net;Initial Catalog="Technical Yacht Solutions";Persist Security Info=True;User ID=TYS;Password=Rasmus1234&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=j81655ta16.database.windows.net;Initial Catalog="Technical Yacht Solutions";Persist Security Info=True;User ID=TYS;Password=Rasmus1234</Value>
+    </Setting>
+    <Setting Name="dmab0913_4sem_gruppe4ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=Kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe4;User ID=dmab0913_4sem_gruppe4;Password=Biksemad&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=Kraka.ucn.dk;Initial Catalog=dmab0913_4sem_gruppe4;User ID=dmab0913_4sem_gruppe4;Password=Biksemad</Value>
+    </Setting>
+    <Setting Name="Technical_Yacht_SolutionConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=tys.database.windows.net;Initial Catalog="Technical Yacht Solution";Persist Security Info=True;User ID=Rasmus;Password=Technical15&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=tys.database.windows.net;Initial Catalog="Technical Yacht Solution";Persist Security Info=True;User ID=Rasmus;Password=Technical15</Value>
+    </Setting>
+    <Setting Name="Technical_Yacht_SolutionsConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(localdb)\Test;Initial Catalog="Technical Yacht Solutions";Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(localdb)\Test;Initial Catalog="Technical Yacht Solutions";Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="Technical_Yacht_SolutionConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=tys.database.windows.net;Initial Catalog="Technical Yacht Solution";User ID=Rasmus;Password=Technical15&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=tys.database.windows.net;Initial Catalog="Technical Yacht Solution";User ID=Rasmus;Password=Technical15</Value>
+    </Setting>
+    <Setting Name="Technical_Yacht_SolutionsConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\Technical Yacht Solutions.accdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\Technical Yacht Solutions.accdb"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

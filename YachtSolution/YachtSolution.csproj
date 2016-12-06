@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A80AFE41-B97D-4CD1-81FE-FA164A0B4E4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YachtSolution</RootNamespace>
+    <AssemblyName>YachtSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Reaper\Desktop\YachtTest\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>22A6E58E27C9A0817B96D4B36CDE9C160A0F6DB3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>YachtSolution_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlLayer\EmployeeController.cs" />
+    <Compile Include="ControlLayer\ImageController.cs" />
+    <Compile Include="ControlLayer\InventoryController.cs" />
+    <Compile Include="ControlLayer\JobController.cs" />
+    <Compile Include="ControlLayer\LogBookController.cs" />
+    <Compile Include="ControlLayer\SettingsController.cs" />
+    <Compile Include="DataLayer\DatabaseTable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseTable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\EmployeeDB.cs" />
+    <Compile Include="DataLayer\ImageDB.cs" />
+    <Compile Include="DataLayer\InventoryDB.cs" />
+    <Compile Include="DataLayer\JobDB.cs" />
+    <Compile Include="DataLayer\LogBookDB.cs" />
+    <Compile Include="DataLayer\SettingsDB.cs" />
+    <Compile Include="GUILayer\CreateCrewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\CreateCrewMember.Designer.cs">
+      <DependentUpon>CreateCrewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\CreateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\CreateGroup.Designer.cs">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\CreateInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\CreateInventory.Designer.cs">
+      <DependentUpon>CreateInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\CreateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\CreateJob.Designer.cs">
+      <DependentUpon>CreateJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\CreateLogItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\CreateLogItem.Designer.cs">
+      <DependentUpon>CreateLogItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\InventoryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\InventoryManagement.Designer.cs">
+      <DependentUpon>InventoryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\ListOfEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\ListOfEmployees.Designer.cs">
+      <DependentUpon>ListOfEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\ListOfJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\ListOfJobs.Designer.cs">
+      <DependentUpon>ListOfJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\LogBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\LogBook.designer.cs">
+      <DependentUpon>LogBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\MasterGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\MasterGUI.Designer.cs">
+      <DependentUpon>MasterGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\MyTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUILayer\PrintTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\PrintTest.Designer.cs">
+      <DependentUpon>PrintTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\Settings.designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\UpdateEmployee.Designer.cs">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\UpdateInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\UpdateInventory.Designer.cs">
+      <DependentUpon>UpdateInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\UpdateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\UpdateJob.Designer.cs">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\UpdateLogItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\UpdateLogItem.Designer.cs">
+      <DependentUpon>UpdateLogItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\UpdateSubGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUILayer\UpdateSubGroup.Designer.cs">
+      <DependentUpon>UpdateSubGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelLayer\InventoryItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TechnicalYachtSolutionsDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechnicalYachtSolutionsDB.xsd</DependentUpon>
+    </Compile>
+    <None Include="DataLayer\DatabaseTable.dbml.layout">
+      <DependentUpon>DatabaseTable.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="GUILayer\CreateCrewMember.resx">
+      <DependentUpon>CreateCrewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\CreateGroup.resx">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\CreateInventory.resx">
+      <DependentUpon>CreateInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\CreateJob.resx">
+      <DependentUpon>CreateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\CreateLogItem.resx">
+      <DependentUpon>CreateLogItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\InventoryManagement.resx">
+      <DependentUpon>InventoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\ListOfEmployees.resx">
+      <DependentUpon>ListOfEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\ListOfJobs.resx">
+      <DependentUpon>ListOfJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\LogBook.resx">
+      <DependentUpon>LogBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\MasterGUI.resx">
+      <DependentUpon>MasterGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\PrintTest.resx">
+      <DependentUpon>PrintTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\UpdateInventory.resx">
+      <DependentUpon>UpdateInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\UpdateJob.resx">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\UpdateLogItem.resx">
+      <DependentUpon>UpdateLogItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\UpdateSubGroup.resx">
+      <DependentUpon>UpdateSubGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataLayer\DatabaseTable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DatabaseTable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TechnicalYachtSolutionsDB.xsc">
+      <DependentUpon>TechnicalYachtSolutionsDB.xsd</DependentUpon>
+    </None>
+    <None Include="TechnicalYachtSolutionsDB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechnicalYachtSolutionsDB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechnicalYachtSolutionsDB.xss">
+      <DependentUpon>TechnicalYachtSolutionsDB.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Technical Yacht Solutions.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

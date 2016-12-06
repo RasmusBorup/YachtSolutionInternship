@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Technical Yacht Solution" Class="DatabaseTableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=tys.database.windows.net;Initial Catalog=&quot;Technical Yacht Solution&quot;;User ID=Rasmus" SettingsObjectName="YachtSolution.Properties.Settings" SettingsPropertyName="Technical_Yacht_SolutionConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DBImage" Member="DBImages">
+    <Type Name="DBImage">
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="DBImage_Employee" Member="Employees" ThisKey="ImageID" OtherKey="photo" Type="Employee" />
+      <Association Name="DBImage_Inventory" Member="Inventories" ThisKey="ImageID" OtherKey="photodoc" Type="Inventory" />
+      <Association Name="DBImage_Job" Member="Jobs" ThisKey="ImageID" OtherKey="photo" Type="Job" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tabs" Member="Tabs">
+    <Type Name="Tab">
+      <Column Name="tab" Member="tab1" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Tab_RoleTab" Member="RoleTabs" ThisKey="tab1" OtherKey="tabName" Type="RoleTab" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="idOfEmployee" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="jobTitle" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="jobEmail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="jobPhone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ssn" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="photo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="passWord" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="DBImage_Employee" Member="DBImage" ThisKey="photo" OtherKey="ImageID" Type="DBImage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inventory" Member="Inventories">
+    <Type Name="Inventory">
+      <Column Name="name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="minimumAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="location" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="manufacturer" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="serialNr" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="photodoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="partFor" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="suppliers" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="role" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="DBImage_Inventory" Member="DBImage" ThisKey="photodoc" OtherKey="ImageID" Type="DBImage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Jobs" Member="Jobs">
+    <Type Name="Job">
+      <Column Name="title" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="timeBetweenJobs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="note" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="workerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="photo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="done" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="routineId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nameOfEmployee" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="subGroup" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="logItem" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="inDays" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isTemplate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="DBImage_Job" Member="DBImage" ThisKey="photo" OtherKey="ImageID" Type="DBImage" IsForeignKey="true" />
+      <Association Name="LogItem_Job" Member="LogItem1" ThisKey="logItem" OtherKey="logItem1" Type="LogItem" IsForeignKey="true" />
+      <Association Name="SubGroup_Job" Member="SubGroup1" ThisKey="subGroup" OtherKey="name" Type="SubGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogBook" Member="LogBooks">
+    <Type Name="LogBook">
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="chiefEngineer" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="LogBook_LogItemReading" Member="LogItemReadings" ThisKey="date" OtherKey="date" Type="LogItemReading" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogItem" Member="LogItems">
+    <Type Name="LogItem">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logItem" Member="logItem1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="unitOfMeasurement" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="LogItem_Job" Member="Jobs" ThisKey="logItem1" OtherKey="logItem" Type="Job" />
+      <Association Name="LogItem_LogItemReading" Member="LogItemReadings" ThisKey="logItem1" OtherKey="logItem" Type="LogItemReading" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogItemReading" Member="LogItemReadings">
+    <Type Name="LogItemReading">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="logItem" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="todaysReading" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="yesterdaysReading" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="difference" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="LogBook_LogItemReading" Member="LogBook" ThisKey="date" OtherKey="date" Type="LogBook" IsForeignKey="true" />
+      <Association Name="LogItem_LogItemReading" Member="LogItem1" ThisKey="logItem" OtherKey="logItem1" Type="LogItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="role" Member="role1" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_RoleTab" Member="RoleTabs" ThisKey="role1" OtherKey="role" Type="RoleTab" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoleTabs" Member="RoleTabs">
+    <Type Name="RoleTab">
+      <Column Name="tabName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Role_RoleTab" Member="Role1" ThisKey="role" OtherKey="role1" Type="Role" IsForeignKey="true" />
+      <Association Name="Tab_RoleTab" Member="Tab" ThisKey="tabName" OtherKey="tab1" Type="Tab" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubGroup" Member="SubGroups">
+    <Type Name="SubGroup">
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="SubGroup_Job" Member="Jobs" ThisKey="name" OtherKey="subGroup" Type="Job" />
+    </Type>
+  </Table>
+</Database>
